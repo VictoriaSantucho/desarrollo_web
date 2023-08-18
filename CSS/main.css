@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=PT+Serif:ital@1&family=Shadows+Into+Light&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+ /* Section Header */
+
+.header-container {
+  display: flex;
+  background-color: #f5c2f2;
+  border: 1px solid rgb(56, 29, 56);
+  height: 100px;
+}
+
+.header-container-alq,
+.header-container-vta,
+.header-container-contacto,
+.header-container-qs{
+  display: flex;
+  background-color: #f5c2f2;
+  border: 1px solid rgb(56, 29, 56);
+  height: 100px;
+  flex:1;
+}
+
+
+.header-content {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-brand{
+  display: flex;
+  align-items: center;
+}
+
+.img-logo {
+  width: 80px;
+  height: 80px;
+  padding-bottom: 8px;
+}
+
+.header-title {
+  font-family: 'Shadows Into Light', cursive;
+  color: #610561;
+  font-size: 35px;
+}
+
+/* Para que los items del menú desplegable aparezcan a la derecha */
+.navbar-nav {
+  align-items: end;
+}
+
+.navbar-toggler {
+  border: 2px solid #610561
+}
+
+.navbar-toggler:hover {
+  background-color: #f5c2f2;
+}
+
+.dropdown-item {
+  color: #610561;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.dropdown-item:hover {
+  color: #8a357a;
+}
+
+.nav-link {
+  padding: 0px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #610561;
+  font-style: italic;
+  transition:1s;
+}
+
+.menu-item a:hover {
+  text-decoration:underline;
+  transition:1s;
+
+}
+
+/*-----------------------------*/
+
+/* Section Main Image and Cards */
+
+
+.img-background {
+  width: 100%;
+  opacity: 0.5;
+  margin-bottom: 60px;
+}
+
+.main-content {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-bottom: 5rem;
+}
+
+.title {
+  margin: 40px 0px;
+}
+
+.title h2 {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 3rem;
+  color: #456990;
+  margin-bottom: 20px;
+  font-family: 'Shadows Into Light';
+  font-weight: 700;
+}
+
+.title p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #456990;
+  font-family: 'PT Serif';
+
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+}
+
+.initial-card {
+  flex: 1;
+  max-width: calc(33.33% - 2rem); /* Ancho máximo para que haya espacio entre las tarjetas */
+  margin: 1rem; /* Agrega espacio entre las tarjetas */
+  
+}
+
+.initial-card a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:#456990;
+  border: 2px solid #610561;
+  background-color: #f5c2f2;
+  height: 100%; 
+}
+
+
+.initial-card img {
+  max-width: 100%;
+  padding: 15px;
+}
+
+.initial-card p {
+    margin-bottom: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    flex: 1;
+}
+
+/*-----------------------------*/
+/* Section Delivery */
+
+.section-delivery {
+  margin-bottom: 100px;
+}
+
+.delivery {
+  padding: 0;
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  margin: 60px auto;
+}
+
+.delivery-left {
+  width: 100%;
+  background-color: #456990;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px 16px ;
+  border: 2px solid #8b8585;
+  border-radius: 5px;
+}
+
+.delivery-right {
+  display: flex;
+  gap: 10px;
+}
+
+.delivery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  border: 2px solid #8b8585;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.delivery-item h5 {
+  font-size: medium;
+  text-align: center;
+}
+
+.delivery-item p {
+  font-size: 13px;
+  color: #4f4e4e88;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*-----------------------------*/
+ /* Footer */
+
+footer {
+  background-color: #f45b69;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #610561;
+}
+
+.footer-container {
+  display: flex;
+  flex:1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contacto, .redes-sociales {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+}
+
+.redes-sociales ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.redes-sociales li {
+  margin: 0 5px;
+}
+
+.redes-sociales img {
+  width: 40px;
+  height: 40px;
+}
+
+/*-----------------------------*/
+/* Quienes somos Page */
+
+.qs-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto 20px;
+    flex: 1;
+    
+}
+
+.qs-title {
+    color:#456990;
+    margin: 20px auto;
+    font-family:'Shadows Into Light';
+    margin-bottom: 20px;
+    font-size: 40px;
+    
+
+}
+
+.qs-main-text {
+    text-align: justify;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    padding: 15px 25px;    
+    width: 90%;
+    margin: 0 auto;
+}
+
+.qs-main-text p {
+    padding-bottom: 10px;
+}
+
+/*-----------------------------*/
+/* Alquiler de juegos Page*/
+
+.alq-main-text {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    flex: 1;
+    text-align: center;
+    margin: 40px auto 20px;
+    
+}
+
+.alq-main-text p {
+    font-family:'PT Serif', serif;
+    color:#456990;
+    font-weight: bold;
+}
+
+.alq-title {
+    color:#456990;
+    margin: 20px auto;
+    font-family:'Shadows Into Light';
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.alq-images-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2rem 6rem;
+  align-items: center;
+  background-color: ghostwhite;
+  margin-bottom: 80px;
+}
+
+.alq-images-container h3 {
+  font-family:'PT Serif', serif;
+  color:#456990;
+}
+/*-----------------------*/
+/* GRID Juegos de Salon */
+
+.alq-images-grid-1 {
+  padding: 2rem 2rem;
+    display: grid;
+    grid-template-areas: 
+    'metegol pool'
+    'tejo pingpong';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.grid-sl-item {
+  display: grid;
+  justify-self: center;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #610561;;
+  background-color: #f5c2f2;
+  height: 300px;
+  width: 300px;
+
+}
+
+.grid-sl-item1 {
+  grid-area: metegol;
+  background-image: url('../Images/sl-metegol.webp');
+}
+
+.grid-sl-item2 {
+  grid-area: pool;
+  background-image: url('../Images/sl-pool.jpeg');
+}
+
+.grid-sl-item3 {
+  grid-area: tejo;
+  background-image: url('../Images/sl-tejo.jpeg');
+}
+
+.grid-sl-item4 {
+  grid-area: pingpong;
+  background-image: url('../Images/sl-ping-pong.jpeg');
+}
+
+
+
+/* Venta de juegos Page  */
+
+.vta-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    margin: 40px auto 20px;
+    
+}
+
+
+.vta-title {
+    color:#456990;
+    margin: 20px auto;
+    font-family:'Shadows Into Light';
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+
+.vta-container p {
+    font-family:'PT Serif', serif;
+    color:#456990;
+    font-weight: bold;
+}
+
+.vta-images-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.vta-images-content {
+    width: 80%;
+    height: 300px;
+    border: 1px solid rgb(97, 5, 97);
+    margin-bottom: 20px;
+}
+
+.vta-images-content h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+/* Contacto Page */
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 40px auto 20px;
+}
+
+.contacto-section {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+.contacto-section h2 {
+    color:#456990;
+    margin: 20px auto;
+    font-family:'Shadows Into Light';
+    margin-bottom: 20px;
+    font-size: 35px;
+  }
+  
+  .contacto-section p {
+    margin-bottom: 20px;
+    font-family: 'PT Serif', serif;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color:#456990;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1c5592;
+  }
+
+
+  @media (max-width: 600px) {
+    .header-title {
+      display: none;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .menu-item {
+      margin: 8px 0; 
+      z-index: 999;
+  }
+  }
+  @media (max-width: 992px) {
+    .images-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .initial-card {
+      flex: 1;
+      margin: 1rem;
+      max-width: 100%;
+  }
+    .initial-card a {
+      width: 400px;
+    }
+
+    .grid-sl-item {
+      height: 260px;
+      width: 260px;
+    
+    }
+
+  }
+
+
+  @media (max-width: 768px) {
+    .delivery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    .delivery-left {
+      width: 100%;
+    }
+      
+    .delivery-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .delivery-item {
+      width: 100%;
+    }
+
+    .alq-images-grid-1 {
+      padding: 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .grid-sl-item {
+      display: flex;
+      justify-content: center;
+      border-radius: 5px;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: 2px solid #610561;;
+      background-color: #f5c2f2;
+      height: 300px;
+      width: 300px;
+    
+    }
+  }
+
+  @media (max-width: 490px) {
+    .initial-card a {
+      width: 300px;
+  }
+
+  }
