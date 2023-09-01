@@ -1,0 +1,74 @@
+.header-section,
+.header-section-pages{
+    display: flex;
+    background-color: $colorSecondary;
+    border: 1px solid $colorBorders;
+    height: 100px;
+    box-shadow: 0 0 5px grey;
+
+    .header-content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .img-logo {
+            width: 80px;
+            height: 80px;
+            padding-bottom: 8px;
+        }
+
+        .header-title {
+            font-family: $fontTitles, cursive;
+            color: $colorBorders;
+            font-size: 35px;
+
+            @include small-600 {
+                display: none;
+            }
+        }
+
+        .navbar-toggler {
+            border: 2px solid $colorBorders;
+
+            &:hover {
+                background-color: $colorSecondary;
+              }
+        }
+
+        .navbar-nav {
+            align-items: end;
+
+            .menu-item {
+                @include large-992 {
+                    margin: 8px 0;
+                    z-index: 999;
+                }
+
+                .nav-link {
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: $colorBorders;
+                    font-style: italic;
+        
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    
+                    @include small-490 {
+                       font-size: 13px;
+                    }
+                }
+            }
+        }
+    }      
+}
+
+.header-section-pages {
+    flex:1
+}
+

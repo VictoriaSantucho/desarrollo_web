@@ -1,0 +1,29 @@
+.qs-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto 20px;
+    flex: 1;
+    width: 80%;
+
+    .qs-title {
+        color: #456990;
+        margin: 20px auto;
+        font-family: $fontTitles;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    .qs-main-text {
+        text-align: justify;
+        font-family: $fontDesc, serif;
+        font-size: 20px;
+        padding: 15px 25px;
+        width: 90%;
+        margin: 0 auto;
+        color: $colorMain;
+
+        & > p {
+            padding-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.venta-pag-section {
+    width: 85%;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+
+    .venta-pag-bloque {
+        display: block;
+        text-align: center;
+
+        & > h1 {
+            color: #456990;
+            font-family: $fontDesc, cursive;
+        }
+
+        .venta-pag-producto,
+        .venta-pag-producto2 {
+            display: flex;
+            margin-top: 5rem;
+            gap: 2rem;
+
+            @include x-large {
+                width: 90%;
+                margin: 4rem auto;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .vanta-pag-imgContent{
+                @include x-large {
+                    width: 90%;
+                }
+
+                .venta-pag-img {
+                    width: 100%;
+                }
+
+            }
+
+            .venta-pag-desc {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                padding: 0 20px;
+                text-align: initial;
+
+                @include x-large {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    text-align: initial;
+                    padding: 0;
+                }
+
+                & > h3, h2 {
+                  color: $colorMain;
+                  font-family: $fontDesc, cursive;
+                }
+
+                & > ul {
+                    list-style-type: none;
+                    padding-left: 0;
+                }
+
+                & button {
+                    padding: 10px 20px;
+                    background-color: $colorMain;
+                    color: #fff;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #1c5592;
+                    }
+                }
+            }
+        }
+    }
+}

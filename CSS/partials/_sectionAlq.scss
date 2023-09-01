@@ -1,0 +1,100 @@
+.combos-section {
+    width: 90%;
+    margin: 3.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .combos-desc {
+        text-align: center;
+        color: $colorMain;
+
+        & > h2 {
+            font-family: $fontTitles;
+            font-weight: 700;
+            font-size: 2.5rem;  
+
+            @include small-490 {
+                font-size: 2rem;
+            }
+        }
+
+        & > p {
+            font-size: 1.2rem;
+
+            @include small-490 {
+                font-size: 1rem
+            }
+        }
+    }
+
+    .combos-cards {
+        display: grid;
+        grid-template-areas:
+          "combo1 combo2 combo3"
+          "combo4 combo5 combo6";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
+
+        @include x-large {
+            display: grid;
+            grid-template-areas:
+            "combo1 combo2"
+            "combo3 combo4"
+            "combo5 combo6";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 3rem;
+        }
+
+        @include medio-768 {
+            display: grid;
+            grid-template-areas:
+              "combo1"
+              "combo2"
+              "combo3"
+              "combo4"
+              "combo5"
+              "combo6";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .combo-card {
+            display: block;
+            border: 1.5px solid $colorBorders;
+            border-radius: 10px;
+            width: min-content;
+            padding: 4px;
+            text-align: center;
+
+            & img {
+                width: 300px;
+                border-radius: 10px;
+                transition: .4s ease-in-out;
+
+                &:hover {
+                    width: 300px;
+                    border-radius: 10px;
+                    transform: scale(1.03);
+                  
+                }
+            }
+
+            & h5 {
+                margin-top: 1rem;
+                font-family: $fontDesc, cursive;
+                color: $colorMain;
+            }
+
+            & p {
+                font-family: $fontDesc, cursive;
+                color: $colorMain
+            } 
+        }
+    }
+}
