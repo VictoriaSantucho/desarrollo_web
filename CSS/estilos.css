@@ -21,6 +21,12 @@ body {
   height: 100px;
   box-shadow: 0 0 5px grey;
 }
+@media screen and (max-width: 950px) {
+  .header-section,
+  .header-section-pages {
+    flex: 1;
+  }
+}
 .header-section .header-content,
 .header-section-pages .header-content {
   width: 90%;
@@ -58,33 +64,41 @@ body {
 .header-section-pages .header-content .navbar-toggler:hover {
   background-color: #f5c2f2;
 }
-.header-section .header-content .navbar-nav,
-.header-section-pages .header-content .navbar-nav {
+.header-section .header-content .navbar-collapse .navbar-nav,
+.header-section-pages .header-content .navbar-collapse .navbar-nav {
   align-items: end;
 }
-@media screen and (max-width: 992px) {
-  .header-section .header-content .navbar-nav .menu-item,
-  .header-section-pages .header-content .navbar-nav .menu-item {
+@media screen and (max-width: 1200px) {
+  .header-section .header-content .navbar-collapse .navbar-nav .menu-item,
+  .header-section-pages .header-content .navbar-collapse .navbar-nav .menu-item {
     margin: 8px 0;
     z-index: 999;
   }
 }
-.header-section .header-content .navbar-nav .menu-item .nav-link,
-.header-section-pages .header-content .navbar-nav .menu-item .nav-link {
-  text-decoration: none;
+.header-section .header-content .navbar-collapse .navbar-nav .menu-item .nav-link,
+.header-section-pages .header-content .navbar-collapse .navbar-nav .menu-item .nav-link {
   font-weight: 600;
   color: #610561;
   font-style: italic;
+  white-space: nowrap;
 }
-.header-section .header-content .navbar-nav .menu-item .nav-link:hover,
-.header-section-pages .header-content .navbar-nav .menu-item .nav-link:hover {
+.header-section .header-content .navbar-collapse .navbar-nav .menu-item .nav-link:hover,
+.header-section-pages .header-content .navbar-collapse .navbar-nav .menu-item .nav-link:hover {
   text-decoration: underline;
 }
 @media screen and (max-width: 490px) {
-  .header-section .header-content .navbar-nav .menu-item .nav-link,
-  .header-section-pages .header-content .navbar-nav .menu-item .nav-link {
+  .header-section .header-content .navbar-collapse .navbar-nav .menu-item .nav-link,
+  .header-section-pages .header-content .navbar-collapse .navbar-nav .menu-item .nav-link {
     font-size: 13px;
   }
+}
+.header-section .header-content .navbar-collapse .navbar-nav .menu-item .nav-link:active,
+.header-section-pages .header-content .navbar-collapse .navbar-nav .menu-item .nav-link:active {
+  text-decoration: underline;
+}
+.header-section .header-content .navbar-collapse .navbar-nav .active:active,
+.header-section-pages .header-content .navbar-collapse .navbar-nav .active:active {
+  text-decoration: underline !important;
 }
 
 .header-section-pages {
@@ -428,6 +442,7 @@ footer .footer-container .redes-sociales > ul li img {
   align-items: end;
 }
 .contacto-section .contacto-container {
+  width: 80%;
   max-width: 500px;
   margin: 3rem auto;
 }
